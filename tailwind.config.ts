@@ -22,7 +22,7 @@ module.exports = {
       },
       colors: {
         dark: "#141414",
-        primary: "#f16134",
+        primary: "#008000",
         secondary: "#5c57a6",
       },
       borderRadius: { lg: "10px" },

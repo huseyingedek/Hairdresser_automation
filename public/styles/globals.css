@@ -5,45 +5,49 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-      @apply antialiased flex h-full bg-gray-100;
-      width: 100%;
-      height: 100%;
-    }
-  
-    body {
-      width: 100%;
-      height: 100%;
-      font-family: "Roboto", sans-serif;
-      background-color: transparent !important;
-      @apply text-base;
-    }
-  
-    #__next{
-      display: flex;
-      width: 100%;
-      height: 100%;
-    }
-  
-    a:hover {
-      @apply text-black dark:text-white;
-    }
-  
-    h1 {
-      @apply text-4xl;
-    }
-  
-    h2 {
-      @apply text-2xl;
-    }
-  
-    h5 {
-      @apply text-3xl;
-    }
-  
-    h6 {
-      @apply text-lg;
-    }
-  
+  html {
+    @apply antialiased flex h-full bg-gray-100;
+    width: 100%;
+    height: 100%;
   }
-  
+
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: transparent !important;
+    @apply text-base;
+  }
+
+  /* antd butonu renk değiştirme */
+  .blue-button {
+    @apply text-white text-sm my-2 border-primary border !bg-primary to-primary hover:bg-gradient-to-r active:bg-gradient-to-r focus:bg-gradient-to-r hover:from-primary hover:to-green-700 active:from-green-700 active:to-primary focus:from-green-700 focus:to-primary cursor-pointer text-center;
+  }
+
+  #__next {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  a:hover {
+    @apply text-black dark:text-white;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-3xl;
+  }
+
+  h6 {
+    @apply text-lg;
+  }
+
+}
