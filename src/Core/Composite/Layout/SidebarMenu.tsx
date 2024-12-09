@@ -1,6 +1,7 @@
 import { Avatar, Menu, Tooltip } from "antd";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { MdOutlineExitToApp } from "react-icons/md";
+import { RiServiceFill } from "react-icons/ri";
 import Link from "next/link";
 import React from "react";
 
@@ -49,6 +50,11 @@ const SiderbarMenu = ({ collapsed = true }) => {
             key: "/dashboard",
             icon: <LuLayoutDashboard size="25" />,
             label: <Link href="/dashboard">Ana Sayfa</Link>,
+          },
+          {
+            key: "/services",
+            icon: <RiServiceFill size="25" />,
+            label: <Link href="/services">Hizmetler</Link>,
           },
           {
             key: "10",
